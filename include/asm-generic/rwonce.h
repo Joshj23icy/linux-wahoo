@@ -61,7 +61,7 @@ do {									\
 	__WRITE_ONCE(x, val);						\
 } while (0)
 
-static __no_sanitize_or_inline
+static __no_sanitize_or_inline;
 unsigned long __read_once_word_nocheck(const void *addr)
 {
 	return __READ_ONCE(*(unsigned long *)addr);
